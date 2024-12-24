@@ -226,21 +226,50 @@
               </div>
             </div>
           </div>
-                 
 
           <!-- ellipse Card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
-              <img src="images/ellipse.png" alt="Shoes" />
+              <img src="images/ellipse.png" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-2xl text-center">Ellipse</h2>
+              <p class="text-center">Area = pie x ab </p>
+              <div class="text-center">
+                <input
+                  id="ellipse-base"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="a"
+                />
+                <span class="mr-4">cm</span>
+                <input
+                  id="ellipse-height"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="b"
+                />
+                <span class="mr-4">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl text-center">
+                  Area :
+                  <span id="ellipse-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions justify-end mt-2">
+                <button
+                  onclick="calculateEllipseArea()"
+                  class="w-full btn btn-primary"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
+
+          
         </div>
 
         <!-- Area Card Container -->
@@ -254,5 +283,6 @@
     <script src="scripts/parallelogram-calculate.js "></script>
     <script src="scripts/rhombus-calculate.js"></script>
     <script src="scripts/pentagon-calculate.js"></script>
+    <script src="scripts/ellipse-calculate.js"></script>
   </body>
 </html>
