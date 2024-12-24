@@ -104,13 +104,41 @@
           <!-- para Card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
-              <img src="images/parallelogram.png" alt="Shoes" />
+              <img src="images/parallelogram.png" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-2xl text-center">Parallelogram</h2>
+              <p class="text-center">Area (A) = b x h</p>
+              <div class="text-center">
+                <input
+                  id="parallelogram-base"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="b"
+                />
+                <span class="mr-4">cm</span>
+                <input
+                  id="parallelogram-height"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="h"
+                />
+                <span class="mr-4">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl text-center">
+                  Area :
+                  <span id="parallelogram-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions justify-end mt-2">
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="w-full btn btn-primary"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -163,6 +191,6 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
-    <script src="scripts/parallelogram-calculate.js            "></script>
+    <script src="scripts/parallelogram-calculate.js "></script>
   </body>
 </html>
