@@ -142,19 +142,51 @@
               </div>
             </div>
           </div>
+
           <!-- Rhombus Card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
-              <img src="images/rhombus.png" alt="Shoes" />
+              <img src="images/rhombus.png" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-2xl text-center">Rhombus</h2>
+              <p class="text-center">Area (A) = 0.5 x d1 x d2</p>
+              <div class="text-center">
+                <input
+                  id="rhombus-d1"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="d1"
+                />
+                <span class="mr-4">cm</span>
+                <input
+                  id="rhombus-d2"
+                  class="w-24 text-2xl p-2 rounded-md"
+                  type="text"
+                  placeholder="d2"
+                />
+                <span class="mr-4">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl text-center">
+                  Area :
+                  <span id="rhombus-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions justify-end mt-2">
+                <button
+                  onclick="rhombusArea()"
+                  class="w-full btn btn-primary"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
+
+
+          
           <!-- pentagon Card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
@@ -192,5 +224,6 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js "></script>
+    <script src="scripts/rhombus-calculate.js"></script>
   </body>
 </html>
